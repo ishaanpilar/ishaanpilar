@@ -5,7 +5,7 @@
 
 Engineer and founder. I build hardware, firmware and the software around it: native macOS tools, ESP32 devices, flight telemetry, and AI agents that take the manual work out of running a hardware business.
 
-Building at [**Fracktal Works**](https://github.com/FracktalWorks) (3D printers and manufacturing), [**Constellation Aerospace**](https://github.com/Constellation-Aerospace) (near-space avionics) and **Hathi Labs**.
+Building at [**Fracktal Works**](https://github.com/FracktalWorks) (3D printers and manufacturing) and **Hathi Labs**.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg">
@@ -61,7 +61,6 @@ Building at [**Fracktal Works**](https://github.com/FracktalWorks) (3D printers 
 
 Private and client work, described without the confidential parts:
 
-- **Near-space telemetry:** flight-computer data streamed to a live web dashboard
 - **Flight data analysis:** offline replay and briefing suite for helicopter operations
 - **Manufacturing SaaS:** MES, MRP and constraint-based scheduling for mid-sized factories
 - **Compliance:** EU Cyber Resilience Act desk for small hardware makers

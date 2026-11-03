@@ -7,10 +7,7 @@ Engineer and founder. I build hardware, firmware and the software around it: nat
 
 Building at [**Fracktal Works**](https://github.com/FracktalWorks) (3D printers and manufacturing) and **Hathi Labs**.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-rainbow.svg">
-  <img src="profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D contribution graph">
-</picture>
+<img src="assets/space-shooter.webp" width="100%" alt="Space shooter game played on my GitHub contribution graph">
 
 ## Shipped
 

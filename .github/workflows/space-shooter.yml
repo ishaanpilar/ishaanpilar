@@ -1,0 +1,23 @@
+name: Space Shooter
+
+on:
+  schedule: # 05:30 IST daily
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-game:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2 # lets the action amend its own previous commit instead of piling up daily ones
+      - uses: czl9707/gh-space-shooter@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          output-path: assets/space-shooter.webp
+          strategy: random
+          fps: 25

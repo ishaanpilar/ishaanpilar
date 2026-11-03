@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Ishaan Pilar: engineer and founder building hardware, firmware and software">
+  <style>
+    :root{--bg:#F5F2EA;--grid:#E2DCCF;--trace:#D3B392;--pad:#A8642A;--ink:#15171A;--sub:#5C5850;--accent:#0E8A5F;--chip:#FBF9F4}
+    .bg{fill:var(--bg)} .grid{fill:var(--grid)}
+    .trace{fill:none;stroke:var(--trace);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .pulse{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-dasharray:18 1200;stroke-dashoffset:18;animation:run 3.6s linear infinite}
+    .via{fill:var(--bg);stroke:var(--pad);stroke-width:2.5}
+    .pin{fill:var(--pad)}
+    .chip{fill:var(--chip);stroke:var(--pad);stroke-width:2}
+    .silk{fill:var(--sub);font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:2px}
+    .ref{fill:var(--pad);font:600 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:3px}
+    .name{fill:var(--ink);font-family:'Barlow Condensed','Avenir Next Condensed','Bahnschrift','Roboto Condensed','Arial Narrow',sans-serif;font-stretch:condensed;font-weight:700;font-size:92px;letter-spacing:3px}
+    .tag{fill:var(--sub);font:400 22px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .term{fill:var(--ink);font:500 19px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .prompt{fill:var(--accent)}
+    .cyc{opacity:0;animation:cyc 12s infinite}
+    .caret{fill:var(--accent);animation:blink 1s steps(1) infinite}
+    .led{fill:var(--accent);animation:blink 1.6s steps(1) infinite}
+    @keyframes run{to{stroke-dashoffset:-460}}
+    @keyframes cyc{0%,23%{opacity:1}25%,100%{opacity:0}}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.pulse{display:none}.cyc,.caret,.led{animation:none}.cyc.l0{opacity:1}}
+  </style>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle class="grid" cx="2" cy="2" r="1.4"/></pattern>
+  </defs>
+
+  <rect class="bg" width="1200" height="300"/>
+  <rect width="1200" height="300" fill="url(#dots)"/>
+
+  <!-- traces leaving the chip -->
+  <g id="traces">
+    <path class="trace" d="M900 56 V36 L930 6"/>
+    <path class="trace" d="M960 56 V28 L988 0"/>
+    <path class="trace" d="M1000 56 V40 L1040 0"/>
+    <path class="trace" d="M1034 110 H1078 L1108 80 H1200"/>
+    <path class="trace" d="M1034 150 H1200"/>
+    <path class="trace" d="M1034 190 H1088 L1118 220 H1200"/>
+    <path class="trace" d="M920 244 V266 L954 300"/>
+    <path class="trace" d="M980 244 V258 L1012 290 V300"/>
+    <path class="trace" d="M846 110 H812 L790 88 V48"/>
+    <path class="trace" d="M846 150 H770"/>
+    <path class="trace" d="M846 190 H808 L784 214 V256"/>
+  </g>
+  <g>
+    <path class="pulse" d="M900 56 V36 L930 6"/>
+    <path class="pulse" style="animation-delay:-1.2s" d="M1034 110 H1078 L1108 80 H1200"/>
+    <path class="pulse" style="animation-delay:-2.1s" d="M1034 150 H1200"/>
+    <path class="pulse" style="animation-delay:-0.6s" d="M1034 190 H1088 L1118 220 H1200"/>
+    <path class="pulse" style="animation-delay:-2.8s" d="M980 244 V258 L1012 290 V300"/>
+    <path class="pulse" style="animation-delay:-1.7s" d="M846 110 H812 L790 88 V48"/>
+    <path class="pulse" style="animation-delay:-3.1s" d="M846 190 H808 L784 214 V256"/>
+  </g>
+  <circle class="via" cx="790" cy="48" r="6"/>
+  <circle class="via" cx="770" cy="150" r="6"/>
+  <circle class="via" cx="784" cy="256" r="6"/>
+
+  <!-- chip -->
+  <g>
+    <g class="pin">
+      <rect x="877" y="56" width="6" height="14"/><rect x="897" y="56" width="6" height="14"/><rect x="917" y="56" width="6" height="14"/><rect x="937" y="56" width="6" height="14"/><rect x="957" y="56" width="6" height="14"/><rect x="977" y="56" width="6" height="14"/><rect x="997" y="56" width="6" height="14"/>
+      <rect x="877" y="230" width="6" height="14"/><rect x="897" y="230" width="6" height="14"/><rect x="917" y="230" width="6" height="14"/><rect x="937" y="230" width="6" height="14"/><rect x="957" y="230" width="6" height="14"/><rect x="977" y="230" width="6" height="14"/><rect x="997" y="230" width="6" height="14"/>
+      <rect x="846" y="87" width="14" height="6"/><rect x="846" y="107" width="14" height="6"/><rect x="846" y="127" width="14" height="6"/><rect x="846" y="147" width="14" height="6"/><rect x="846" y="167" width="14" height="6"/><rect x="846" y="187" width="14" height="6"/><rect x="846" y="207" width="14" height="6"/>
+      <rect x="1020" y="87" width="14" height="6"/><rect x="1020" y="107" width="14" height="6"/><rect x="1020" y="127" width="14" height="6"/><rect x="1020" y="147" width="14" height="6"/><rect x="1020" y="167" width="14" height="6"/><rect x="1020" y="187" width="14" height="6"/><rect x="1020" y="207" width="14" height="6"/>
+    </g>
+    <rect class="chip" x="860" y="70" width="160" height="160" rx="10"/>
+    <circle cx="880" cy="90" r="4" fill="var(--pad)"/>
+    <text class="ref" x="940" y="146" text-anchor="middle" style="font-size:30px;letter-spacing:4px">IP</text>
+    <text class="silk" x="940" y="172" text-anchor="middle">REV 26</text>
+    <circle class="led" cx="1000" cy="210" r="5"/>
+  </g>
+
+  <!-- copy -->
+  <text class="ref" x="72" y="86">U1 · ENGINEER · FOUNDER</text>
+  <text class="name" x="66" y="170">ISHAAN PILAR</text>
+  <text class="tag" x="72" y="210">Hardware, firmware and the software that runs around them.</text>
+  <g class="term">
+    <text class="cyc l0" x="72" y="254"><tspan class="prompt">❯ </tspan>building macOS menu-bar tools<tspan class="caret">_</tspan></text>
+    <text class="cyc" style="animation-delay:3s" x="72" y="254"><tspan class="prompt">❯ </tspan>flashing ESP32 firmware<tspan class="caret">_</tspan></text>
+    <text class="cyc" style="animation-delay:6s" x="72" y="254"><tspan class="prompt">❯ </tspan>streaming flight telemetry<tspan class="caret">_</tspan></text>
+    <text class="cyc" style="animation-delay:9s" x="72" y="254"><tspan class="prompt">❯ </tspan>wiring up AI agents<tspan class="caret">_</tspan></text>
+  </g>
+</svg>

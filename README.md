@@ -59,7 +59,7 @@ Building at [**Fracktal Works**](https://github.com/FracktalWorks) (3D printers 
 
 ## Behind closed doors
 
-Private and client work, described without the confidential parts:
+Private and client work:
 
 - **Flight data analysis:** offline replay and briefing suite for helicopter operations
 - **Manufacturing SaaS:** MES, MRP and constraint-based scheduling for mid-sized factories

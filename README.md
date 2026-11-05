@@ -9,6 +9,12 @@ Building at [**Fracktal Works**](https://github.com/FracktalWorks) (3D printers 
 
 <img src="assets/space-shooter.webp" width="100%" alt="Space shooter game played on my GitHub contribution graph">
 
+## Currently working on
+
+| | |
+|---|---|
+| [**Stride**](https://github.com/ishaanpilar/stride) | Personal AI-powered organiser for the Mac: morning briefing, assistant chat, AI quick capture and a menu bar panel |
+
 ## Shipped
 
 #### `SW` macOS tools
